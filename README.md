@@ -13,3 +13,6 @@ h. Bei der Abholadresse ist zu prüfen, ob sie in der Nähe der Geschäftsstelle
 i. Ist eine Registrierung erfolgreich – egal ob vor Ort oder als Abholung, wird das den Nutzenden auf einer abschließenden Seite unter Angabe aller Daten (Art der Kleider, Krisengebiet, Datum, Uhrzeit und Ort) bestätigt.
 c) Dokumentiere Dein Ergebnis schriftlich und lege den Code, falls nicht bereits im Schritt 2 geschehen, im Code-Repository ab.
 Hinweis: Bewertet wird Deine schriftliche Dokumentation und Umsetzungskonzeption, die Du sinnvoll mit Screenshots, Verweisen und gegebenenfalls Quellen ergänzt. Platziere bitte darüber hinaus einen Link auf Dein öffentliches Repository auf dem Deckblatt der Dokumentation, damit der/die Tutor:in Deinen Quellcode anschauen kann. Dieser Code stellt in dieser Fallstudie eine Art Anhang zur Dokumentation dar
+![Hauptseite Kleiderspende](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/b0bfebc3-6f65-4706-8e14-fa16efc0598d)
+![Kleiderspendeseite Eingabeseite](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/491025fe-bf2b-4dd9-9973-535f5e872924)
+![Kleiderspendeseite Eingabeseite Abholung](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/366ca652-190c-429a-87ba-fbd4aad1bd7e)
