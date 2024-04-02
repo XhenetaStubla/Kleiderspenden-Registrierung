@@ -27,6 +27,7 @@ c) Dokumentiere Dein Ergebnis schriftlich und lege den Code, falls nicht bereits
 
 Hinweis: Bewertet wird Deine schriftliche Dokumentation und Umsetzungskonzeption, die Du sinnvoll mit Screenshots, Verweisen und gegebenenfalls Quellen ergänzt. Platziere bitte darüber hinaus einen Link auf Dein öffentliches Repository auf dem Deckblatt der Dokumentation, damit der/die Tutor:in Deinen Quellcode anschauen kann. Dieser Code stellt in dieser Fallstudie eine Art Anhang zur Dokumentation dar.
 
-![Hauptseite Kleiderspende](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/b0bfebc3-6f65-4706-8e14-fa16efc0598d)
-![Kleiderspendeseite Eingabeseite](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/491025fe-bf2b-4dd9-9973-535f5e872924)
-![Kleiderspendeseite Eingabeseite Abholung](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/366ca652-190c-429a-87ba-fbd4aad1bd7e)
+![Hauptseite Kleiderspende](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/307f5169-5d66-4b33-94c6-b472e3949f80)
+![Kleiderspendeseite Eingabeseite](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/08b456bc-8c6d-4989-b731-ab3cca979753)
+![Kleiderspendeseite Eingabeseite Abholung](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/b21dbcc9-ec90-4cac-9a00-f3231f4c1f11)
+
