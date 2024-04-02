@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Der <head>-Tag ist ein wichtiger Bestandteil einer HTML-Seite. Er wird verwendet,
+     um Metadaten, Skripte, Stylesheets und andere Ressourcen zu definieren,
+      die für das Rendern und die Funktionalität der Webseite benötigt werden. 
+      Der Inhalt innerhalb des <head>-Tags wird nicht direkt auf der Webseite angezeigt,
+     sondern enthält wichtige Informationen für den Browser -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Template</title>
+    <!-- Bootstrap CSS Link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+
+<body>
+    <!--       
+Dieser HTML-Code definiert einen Header-Bereich mit einem dunklen Hintergrund und einem responsiven Layout. 
+Der Header enthält ein Logo, 
+einen Titel und eine Navigationsleiste. Hier ist eine Erklärung für jeden Teil des Codes:
+      -->
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- link logo -->
+                <div class="col-4">
+                    <a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+                </div>
+                <!-- mitte title -->
+                <div class="col-4 text-center">
+                    <h3>Kleiderspende</h3>
+                </div>
+                <!-- recht links -->
+                <div class="col-4 text-right">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="file:///C:/Users/cy3yay5/Desktop/Kleiderspenden/index.html">Start</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="file:///C:/Users/cy3yay5/Desktop/Kleiderspenden/kleiderspende.html">Kleiderspende</a>
+                                    </li>
+                         
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Content Section  -->
+    <div class="container mt-5">
+        <h1>Kleiderspende  </h1>
+        <br>
+
+        <!-- 
+            
+Dieser HTML-Code definiert einen Bereich für Spenderinformationen innerhalb eines Bootstrap-Containers. 
+    -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Spender Bereich  -->
+                    <h2>Spender</h2>
+                    <form id="myForm">
+                        <div class="form-group">
+                            <label for="username">Vorname</label>
+                            <input type="text" class="form-control" name="vorname" required placeholder="Vorname">
+                        </div>
+                        <div class="form-group">
+                            <label for="Telephone">Nachname</label>
+                            <input type="text" class="form-control " name="nachname"required  placeholder="Nachname ">
+
+                        </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+                    <!-- Krisengebiet Bereich  -->
+                    <h2>Übergabeort </h2>
+                        <div class="form-group">
+                            <label for="Krisengebiet">Übergabe</label>
+
+                            <select class="form-control" id="ort">
+                                <option value="0">Übergabe an der Geschäftsstelle</option>
+                                <option value="1">Abholung</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Krisengebiet">Krisengebiet</label>
+                            <select class="form-control" id="Krisengebiet">
+                                <!--  von JavaScript -->
+                            </select>
+                        </div>
+
+                </div>
+
+                <!-- Abholadresse Bereich  -->
+                <div class="col-md-12">
+                    <!-- Formgruppe erscheint nach der Auswahl von abholung-->
+                    <div id="dynamicForm" class="form-group hidden">
+                        <h2> Abholadresse</h2>
+               
+                        <input type="Telephone" class="form-control" id="email" placeholder="Telephone">
+
+                        <input type="text" class="form-control mt-2" id="street" placeholder="Straße"  >
+                        <input type="number" min="0" class="form-control mt-2" id="street" placeholder="Hausnummer" >
+
+                        <div class="row mt-2">
+                          <div class="col">
+                            <input type="text" id="plz-private" type="number" min="0" class="form-control"  placeholder="Postleitzahlen" >
+                          </div>
+                          <div class="col"> 
+                            <button id="checkButton" class="btn btn-danger">Postleitzahlen prüfen</button> 
+                          </div>
+                        </div>
+
+                        <input type="text" class="form-control mt-2" id="city" placeholder="Ort" >
+
+
+                    </div>
+                </div> <!-- Ende Section -->
+
+
+                <!--  Kleidungsregistrierung -->
+                <div class="col-md-12"> 
+                    <h2>Kleidungsregistrierung</h2>
+
+                        <div class="form-group">
+                            <label for="Kleidungsart">Kleidungsart</label>
+                            <select class="form-control" id="Kleidungsart">
+                                <!-- Options will be dynamically populated from JavaScript -->
+                            </select>
+                        </div>
+
+                        <input type="number" class="form-control mt-2" min="0" required name="groesse" placeholder="Größe Engeben">
+
+                        <input type="text" class="form-control mt-2"  name="farbe"required  placeholder="Farbe Engeben">
+
+    
+                        <button type="submit" class="btn btn-dark mt-2">Registrieren</button>
+                    </form>
+                </div>
+                <!-- Clothes Registration Form Section -->
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Dieser HTML-Code definiert einen Footer-Bereich am Ende der Webseite  -->
+    <footer class="footer bg-dark text-white p-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- First column -->
+                <div class="col-md-6">
+                    <h3>Geschäftsstelle X</h3>
+                    <span>Friedrichstraße  80</span>
+                    <p><span id="plz-local">76131</span> <span>Karlsruhe</span></p>
+                    
+                </div>
+                <!-- Second column -->
+                <div class="col-md-6">
+                    <h3>Wichtige Links</h3>
+                    <a class="text-white" href="/Impressum.html"> Impressum</a>
+                    <br>
+                    <a class="text-white" href="http://"> Datenschutzrichtlinien</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Diese Zeilen sind HTML <script>-Tags, die verschiedene 
+        JavaScript-Bibliotheken und -Dateien in deine Webseite einbinden  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
