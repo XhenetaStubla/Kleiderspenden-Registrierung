@@ -66,21 +66,47 @@ $(document).ready(function() {
 
 //getElementById ist eine Methode in JavaScript, die in Verbindung mit dem Document Object Model (DOM) verwendet wird, um ein HTML-Element anhand seiner eindeutigen ID zu finden
 
-  document.getElementById('checkButton').addEventListener('click', function(event) {
-    event.preventDefault();
-    
-    var inputValue = document.getElementById('plz-private').value;
-    var spanValue = document.getElementById('plz-local').textContent;
-    
-    // Dieser Code vergleicht den Werten von zwei Eingaben.
-    // Wenn die beiden Werte identisch sind, wird eine Benachrichtigung angezeigt, die besagt, dass die Postleitzahlen identisch sind.
-    // Andernfalls wird eine Benachrichtigung angezeigt, die besagt, dass die Postleitzahlen nicht identisch sind.
-    if (inputValue === spanValue) {
-      alert('Postleitzahlen ist identisch');
-    } else {
-      alert('Postleitzahlen nicht identisch');
-    }
+document.getElementById('checkButton').addEventListener('click', function(event) {
+  event.preventDefault();
+  
+  var inputValue = document.getElementById('plz-private').value;
+  var spanValue = document.getElementById('plz-local').textContent;
+  var alertMessage = document.getElementById('alertMessage');
+  
+  while (alertMessage.firstChild) {
+  alertMessage.removeChild(alertMessage.firstChild);
+  }
+  
+  if (inputValue === spanValue) {
+  var title = document.createElement('strong');
+  title.textContent = "Hinweis";
+  title.style.color = "green";
+  alertMessage.appendChild(title);
+  alertMessage.appendChild(document.createElement('br'));
+  var text = document.createElement('span');
+  text.textContent = "Eine Abholung der Kleiderspende wäre möglich!";
+  text.style.color = "black";
+  alertMessage.appendChild(text);
+  }
+  else {
+  var title = document.createElement('strong');
+  title.textContent = "Fehlermeldung:";
+  title.style.color = "red";
+  alertMessage.appendChild(title);
+  alertMessage.appendChild(document.createElement('br'));
+  var text = document.createElement('span');
+  text.textContent = "Hier kann keine Abholung erfolgen. Die Abgabe der Kleiderspende muss in der Geschäftsstelle erfolgen.";
+  text.style.color = "black";
+  alertMessage.appendChild(text);
+  }
+  
+  document.getElementById('customPopup').style.display = 'block';
   });
+  
+  // Function to close the custom pop-up
+  function closePopup() {
+  document.getElementById('customPopup').style.display = 'none';
+  }
 
 
 // Wenn das Formular abgeschickt wird Dann werden verschiedene Informationen aus dem Formular gesammelt, einschließlich des aktuellen Datums und der Zeit, und in einem neuen Fenster angezeigt.
