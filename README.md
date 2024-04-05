@@ -30,4 +30,8 @@ Hinweis: Bewertet wird Deine schriftliche Dokumentation und Umsetzungskonzeption
 ![Hauptseite Kleiderspende](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/307f5169-5d66-4b33-94c6-b472e3949f80)
 ![Kleiderspendeseite Eingabeseite](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/08b456bc-8c6d-4989-b731-ab3cca979753)
 ![Kleiderspendeseite Eingabeseite Abholung](https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/b21dbcc9-ec90-4cac-9a00-f3231f4c1f11)
+<img width="615" alt="PLZ Fehlermeldung" src="https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/e58f965f-4c50-409c-9d1b-58ef28d6d40b">
+<img width="544" alt="PLZ passt" src="https://github.com/xhenetastu/Kleiderspenden-Registrierung/assets/164858775/b624a4b1-2285-4797-9bd7-1f27ff63afd7">
+
+
 
